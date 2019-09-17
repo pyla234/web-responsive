@@ -1,0 +1,388 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: b
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #fff !important;
+    color: #5f1782 !important;
+    border: 1px solid #5f1782 !important;
+}
+
+#myBtn:hover {
+    background-color: rgb(92, 96, 155) !important;
+    color: #fff !important;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+.navbar a {
+    color: #fff !important;
+}
+
+.fa-bars {
+    color: #fff !important;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+/* banner section */
+#banner {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #fff;
+    padding-top: 5%;
+}
+
+#banner img {
+    width: 450px;
+    height: 350px;
+    margin: 10px 0px 0px 40px;
+}
+
+/* header */
+
+.header {
+    height: 600px;
+    width: 100%;
+    padding: 30px 0 30px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #ffffff;
+}
+
+.header img {
+    width: 450px;
+    height: 350px;
+    margin: 70px 0px 0px 50px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.header h1,
+.header p,
+.header button {
+    margin-top: 20px;
+}
+
+.header .btn {
+    border: 1px solid #ffffff;
+    margin: 30px 20px;
+    color: #ffffff !important;
+    background-color: #a517ba;
+}
+
+.header .btn:hover {
+    border-radius: 25px !important;
+    transition: 1s;
+    background-color: #5f1782
+}
+
+@media(max-width:767px) {
+    .header {
+        padding: 30px;
+        height: 600px;
+    }
+
+    .header img {
+
+        width: 90%;
+        height: 250px;
+        margin: 20px 0 0 20px;
+    }
+
+    .header .btn {
+        font-size: 10px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header p {
+        font-size: 10px;
+    }
+}
+@media(min-width:768px) {
+    .header img {
+        
+        padding-right: 30px;
+    }
+}
+
+/* services */
+
+.services {
+    padding: 80px 0 80px;
+    text-align: center;
+}
+
+.services p {
+    color: #5a5858;
+    font-size: 16px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+.services i {
+    color: #ffffff;
+    height: 80px;
+    width: 80px;
+    padding: 25px 25px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.services i:hover {
+    color: #5f1782;
+    background-image: linear-gradient(to right, #f8f5f8, #e1dee2);
+    border: 1px solid #a517ba;
+    box-shadow: 0 0 7px #555;
+    transform: scale(1.1, 1.1);
+}
+
+@media(max-width:768px) {
+    .services {
+        padding: 60px;
+    }
+}
+
+.services i {
+    -webkit-transition: 1s;
+}
+
+/* pricing */
+
+#pricing {
+    text-align: center;
+    background-image: url(../images/bg1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.pricing {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0 80px;
+}
+
+
+.pricing p,
+.pricing h2 {
+    color: #ffffff;
+}
+
+.pricing p {
+    padding-bottom: 40px;
+}
+
+.pricing .pacakges {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.pacakges li {
+    display: block;
+    padding: 5px;
+}
+
+.pacakges h1,
+.pacakges h4,
+.pacakges b {
+    color: #4c4c4c;
+}
+
+.pacakges p,
+.pacakges li {
+
+    color: #737373;
+}
+
+.pacakges button {
+    margin-top: 10px;
+}
+
+@media(max-width:767px) {
+    .pricing {
+        padding: 30px;
+    }
+
+    .pacakges {
+        width: 80%;
+        margin-left: 35px;
+    }
+}
+
+@media(min-width:768) {
+    .pricing .pacakges {
+        padding: 30px 0px;
+    }
+
+}
+
+.pacakges .btn:hover {
+    background-color: #fff !important;
+    color: #5f1782 !important;
+    border: 1px solid #5f1782 !important;
+}
+
+.pacakges .btn {
+    background-color: #5f1782 !important;
+    color: #fff !important;
+}
+
+/* team */
+
+.team {
+    text-align: center;
+    padding: 50px 0 80px;
+}
+
+.team b {
+    color: #4c4c4c;
+}
+
+.team h4 {
+    color: #222222
+}
+
+.team p {
+    color: #5a5858;
+}
+
+.team img {
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+}
+
+.team i {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: #a517ba;
+    color: #ffffff;
+}
+
+.team a:hover i {
+    background-color: #5f1782;
+}
+
+/* contact */
+
+.contact {
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+}
+
+.contact p {
+    padding-bottom: 80px;
+    color: #737373;
+}
+
+.contact .input-group {
+    margin-bottom: 25px;
+}
+
+.contact .form-control {
+    border-radius: 0 !important;
+}
+
+.contact span {
+    border-radius: 0 !important;
+}
+
+.contact .btn {
+    border-radius: 0;
+    width: 100%;
+    background-color: #5f1782;
+    font-size: 15px;
+    color: #fff !important;
+}
+
+.contact .btn:hover {
+    background-color: #a517ba !important;
+    color: #fff !important;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 30px;
+    color: #fff;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.footer .social {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.footer input {
+    height: 40px;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    background-color: #cccccc;
+    color: #000000 !important;
+}
+
+.footer .btn {
+    padding: 10px 5px 10px;
+    margin: -3px 0 0 5px;
+    background-color: #a517ba;
+}
